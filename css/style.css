@@ -1,10 +1,17 @@
 @import url(reset.css);
 
 @font-face {
-  font-family: "Gmarket";
-  src: url(./font/GmarketSansTTFMedium.ttf);
+  font-family: "Gmarket-m";
+  src: url(../font/GmarketSansTTFMedium.ttf);
 }
-
+@font-face {
+  font-family: "Gmarket-b";
+  src: url(../font/GmarketSansTTFBold.ttf);
+}
+@font-face {
+  font-family: "Gmarket-l";
+  src: url(../font/GmarketSansTTFlight.ttf);
+}
 
 /*
 배경색 : #dde9fb
@@ -26,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 body{
-  font-family: 'Gmarket', sans-serif;
+  font-family: 'Gmarket-m', sans-serif;
 }
 
 /*header*/
@@ -45,45 +52,16 @@ header #header-wrap{
   margin:0 auto;
   padding:20px;
 }
-header #header-wrap p{
+header #header-wrap h1{
   font-size:25px;
   font-weight:600;
   display:inline-block;
   margin-right:30px;
   
 }
-header #header-wrap #dn_btn{
-  width:50px;
-  height:50px;
-  border-radius: 25px;
-  font-size:16px;
-  border:0px;
-  background-color: #80A5F5;
-  display: inline-block;
-  vertical-align: middle;
-  right:0;
-  color:#fff;
-  font-weight: 600;
-}
-header #header-wrap #dn_btn:hover{
-  background-color: #fff;
-  border:2px solid #80A5F5;
-  cursor: pointer;
-  color:#80A5F5;
-}
-.bar-bg{
-  background-color: #dae8fc;
-  position: absolute;
-  width:100%;
-  height:5px;
-}
-.bar-ing{
-  background-color: #80A5F5;
-  width:100%;
-  position: absolute;
-  height:5px;
-  vertical-align: baseline;
-}
+
+
+
 
 
 
@@ -110,9 +88,8 @@ main #wrap .visual .visual-text-area{
   justify-content: center;
   /* border:1px solid red; */
 }
-
 main #wrap .visual .visual-text-area .text{
-  width:60%;
+  width:55%;
   font-weight: 600;
   font-size:50px;
   /* border:1px solid red; */
@@ -120,70 +97,48 @@ main #wrap .visual .visual-text-area .text{
   justify-content: left;
   line-height:1.25;
 }
-
 main #wrap .visual .visual-text-area .text img{
   display: block;
   width: 230px;
-  margin-right: 40px;
+  margin:0 40px 0 40px;
 }
 main #wrap .visual .visual-text-area .text .txt-title{
   width: 620px;
   margin-top: 30px;
   font-size: 55px;
-  font-family: "Gmarket";
+  
   line-height: 58px;
 }
-/* main #wrap .visual .visual-text-area .text-left .text{
-  font-size:80px;
-  line-height:1.25;
-  letter-spacing: 55px;
-} */
 
-/*
-text-right
-main #wrap .visual .visual-text-area .text-left .text4{
-  font-size: 23px;
-  letter-spacing: 4.5px;
-  margin-top: 10px;
-}
 
-main #wrap .visual .visual-text-area .text-right{
-  width:30%;
-  height:auto;
-  display: flex;
-  justify-content: right;
-  border:1px solid black;
-}
-main #wrap .visual .visual-text-area .text-right span{
 
-  display: block;
-  font-size: 30px;
-  
-  line-height: 1.5;
-}
-main #wrap .visual .visual-text-area .text-right .text-box2{
-  margin-top: 45px;
-  padding-left: 20px;
-  border-left: 14px solid black;
-}
-main #wrap .visual .visual-text-area .text-right .text-box2 span{
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.3;
-} */
 /*블라블라 내용 많은 곳 profile*/
 main .profile{
   width:100%;
   background-color:lightslategray;
-  
+  font-family: 'Gmarket-m', sans-serif;
+}
+
+.s2-wrap{
+  border:1px solid black;
+  width:100%;
+  display: inline-block;
 }
 main .profile h2{
-  margin-top: 120px;
+  font-family: 'Gmarket-m', sans-serif;
   text-align: right;
   font-size: 46px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.74;
+  float:right;
+  bordeR:1px solid orange;
+}
+.imoge-box{
+  width:120px;
+  height:120px;
+  border:1px solid red;
+  float:right;
+
 }
 main .profile .intro-box{
   font-size: 19px;
@@ -192,7 +147,8 @@ main .profile .intro-box{
 }
 main .profile .intro-box .intro{
   margin-top:40px;
-  color:#80A5F5;
+  font-family: 'Gmarket-m', sans-serif;
+  
 }
 
 /*포폴 넣는 곳!!!! cp-box */
@@ -221,6 +177,29 @@ main .cp-box ul li{
 
 
 
+
+/*dn_btn*/
+header #header-wrap #dn_btn{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+  font-size:16px;
+  border:0px;
+  background-color: #80A5F5;
+  display: inline-block;
+  vertical-align: middle;
+  right:0;
+  color:#fff;
+  font-weight: 600;
+}
+header #header-wrap #dn_btn:hover{
+  background-color: #fff;
+  border:2px solid #80A5F5;
+  cursor: pointer;
+  color:#80A5F5;
+}
+
+
 /*top_btn*/
 #top_btn{
   width:60px;
@@ -240,6 +219,21 @@ main .cp-box ul li{
   border:2px solid #80A5F5;
   cursor: pointer;
   color:#80A5F5;
+}
+
+/*스크롤 바*/
+.bar-bg{
+  background-color: #dae8fc;
+  position: absolute;
+  width:100%;
+  height:5px;
+}
+.bar-ing{
+  background-color: #80A5F5;
+  width:100%;
+  position: absolute;
+  height:5px;
+  vertical-align: baseline;
 }
 
 /*comment*/
