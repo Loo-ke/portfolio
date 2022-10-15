@@ -35,6 +35,11 @@ body::-webkit-scrollbar {
 body{
   font-family: 'Gmarket-m', sans-serif;
 }
+/*드래그 시 색상 변경*/
+*::selection {
+  background-color: #556b9c;
+  color: #ffffff;
+}
 
 /*header*/
 header{
@@ -83,7 +88,7 @@ main #wrap .visual{
 }
 main #wrap .visual .visual-text-area{
   padding:350px 0 200px;
-  margin: 0 0 300px 0;
+  margin: 0 0 180px 0;
   display: flex;
   justify-content: center;
   /* border:1px solid red; */
@@ -115,25 +120,22 @@ main #wrap .visual .visual-text-area .text .txt-title{
 /*블라블라 내용 많은 곳 profile*/
 main .profile{
   width:100%;
-  background-color:lightslategray;
   font-family: 'Gmarket-m', sans-serif;
 }
-
 .s2-wrap{
   border:1px solid black;
   width:100%;
   display: inline-block;
 }
 main .profile h2{
-  font-family: 'Gmarket-m', sans-serif;
+  font-family: 'Gmarket-b', sans-serif;
   text-align: right;
-  font-size: 46px;
-  font-weight: 500;
+  font-size: 40px;
   line-height: 1.74;
   float:right;
   bordeR:1px solid orange;
 }
-.imoge-box{
+.s2-wrap .image-box{
   width:120px;
   height:120px;
   border:1px solid red;
@@ -141,39 +143,278 @@ main .profile h2{
 
 }
 main .profile .intro-box{
+  padding:100px 0 200px;
+  margin: 0 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  /* border:1px solid red; */
+}
+main .profile .intro-box h3{
+  font-weight: 600;
+  font-family: 'Gmarket-m', sans-serif;
+  margin-top:50px;
+
+}
+
+
+main .profile .intro-box .intro{
   font-size: 19px;
   letter-spacing: -0.2px;
   line-height: 1.95;
-}
-main .profile .intro-box .intro{
-  margin-top:40px;
-  font-family: 'Gmarket-m', sans-serif;
+  margin:0 50px 50px;
+  font-family: 'Gmarket-l', sans-serif;
+  
   
 }
+main .profile .s2-largeText{
+  font-size:60px;
+  text-align: center;
+  margin-top:100px;
+  padding:30px 0;
+  border:1px solid red;
+}
 
-/*포폴 넣는 곳!!!! cp-box */
-main .cp-box{
+/*포폴 넣는 곳!!!! portfolio */
+main .portfolio{
   width:100%;
   height:auto;
   border:1px solid black;
   margin:0 auto;
   
 }
-main .cp-box ul{
+main .portfolio h2{
+  text-align: center;
+      padding:20px 0;
+      font-size:40px;
+  font-family: "Gmarket-b";
+  margin:20px 0 120px;
+}
+main .portfolio ul{
   width:100%;
-  height:auto;
-  padding:50px 0;
-  margin: 0 auto;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:50px;
+}
+main .portfolio ul li{
+  width:31%;
+      height:auto;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none;
+      
+      border-radius: 25px;
   
 }
-main .cp-box ul li{
-  width:30%;
-  height:100px;
-  border:1px solid red;
-  display: flex;
+main .portfolio ul li a{
+  cursor: pointer;
+      width:100%;
+      text-decoration: none;
+      border-radius: 25px;
+      color: #000;
+}
+main .portfolio a:hover{
+  font-weight: 700;
+  box-shadow: 5px 10px 5px #aaaaaa;
+
+}
+main .portfolio .img{
+  display:flex;
+  background-color:#80A5F5;
+  border-radius: 25px 25px 0 0 ;
+  width:100%;
+  height:200px;
+}
+main .portfolio dl{
+  display:flex;
   flex-direction: column;
+  width:100%;
+  
+  background-color:#FBFBFB;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+}
+main .portfolio dt{
+  padding:20px 0;
+  font-size:20px;
+  font-weight: 600;
+}
+main .portfolio dd{
+  font-size:17;
+  padding:0 0 20px ;
+}
+
+
+
+
+
+
+
+
+/*댓글 css 시작 comment*/
+.comment-wrap{
+  border:1px solid gray;
+      width:100%;
+      height:0 auto;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.comment-wrap section{
+  width:100%;
+  display:flex;
+  border:0px solid #80A5F5;
+  justify-content: space-around;
+  justify-items: center;
+  margin-bottom:50px;
+}
+.comment-wrap h2{
+  margin:0 auto;
+  padding:30px 0;
+  font-size:40px;
+  font-family: "Gmarket-b";
+  margin:20px 0 120px;
+}
+.comment-wrap .name{
+  width:20%;
+}
+.comment-wrap input{
+  width:60%;
+  height:50px;
+  border:2px solid #80A5F5;
+  border-radius: 25px;
+  font-size: 15px;
+}
+.comment-wrap input:active{
+  background-color: #fff;
+}
+
+.comment-wrap span{
+  margin:0 30px;
   
 }
+.comment-wrap .itemAdd{
+  padding:0 30px;
+  border:2px solid #80A5F5;
+  border-radius: 25px;
+  color:#80A5F5;
+  font-weight:600;
+  font-size:17px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.comment-wrap .itemAdd:hover{
+  color:#fff;
+  font-weight:600;
+  background-color: #80A5F5;
+}
+.comment-wrap ul{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:0px solid red;
+}
+.comment-wrap li{
+  border:0px solid green;
+  width:100%;
+  padding:15px 0;
+  display:flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  border-bottom:2px solid #d6e2fc;
+}
+.comment-wrap b{
+  width:20%;
+  text-align: center;
+  font-family: "Gmarket-b";
+}
+.comment-wrap .itemText{
+  width:60%;
+  font-family: "Gmarket-m";
+}
+.comment-wrap .itemDel{
+  padding:10px;
+  border-radius: 15px;
+  border:2px solid #80A5F5;
+  color:#80A5F5;
+  background-color: #fff;
+  font-weight: 700;
+  font-size:15px;
+  cursor: pointer;
+}
+.comment-wrap .itemDel:hover{
+  color:#fff;
+  background-color: #80A5F5;
+}
+.comment-wrap .cmt-title{
+    background-color: #eceffe;
+}
+.comment-wrap .cmt-title b{
+  width:20%;
+  text-align: center;
+  font-family: "Gmarket-b";
+}
+.comment-wrap .cmt-title span{
+  width:67.5%;
+  font-family: "Gmarket-m";
+}
+/*댓글 css 끝!! comment*/
+
+
+/*footer 시작 !!! */
+footer{
+  background-color: #acb3cf;
+  display:flex;
+  justify-content: center;
+}
+footer .wrap{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer h2{
+  margin:auto;
+  padding:30px 0;
+  font-size:40px;
+  font-family: "Gmarket-b";
+}
+footer ul{
+  width:50%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:30px 0;
+}
+footer a{
+  border:none;
+  
+}
+footer li:hover{
+  background-color: #ffffff;
+  color:#9de1f6;
+  border:2px solid #9de1f6;
+}
+footer li{
+  background-color: #9de1f6;
+  border-radius: 40px;
+  width:80px;
+  height:80px;
+  text-align: center;
+}
+footer span{
+  text-align: center;
+  padding:30px 0 20px 0;
+}
+/*footer 끝!!!!!!!!*/
+
 
 
 
@@ -237,4 +478,5 @@ header #header-wrap #dn_btn:hover{
 }
 
 /*comment*/
+
 
