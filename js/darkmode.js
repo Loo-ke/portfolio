@@ -73,6 +73,11 @@ function headerSetBackgroundColor(color){
 function cmtSetBackgroundColor(color){
     document.querySelector('.cmt-title').style.backgroundColor = color;
 }
+
+//댓글 타이틀 글자색 바꾸기
+function itemNameSetColor(color){
+    document.querySelector('.itemName').style.color = color;
+}
 //
 
 // 주간, 야간모드
@@ -95,6 +100,8 @@ function day_night_handler(self) {
         dlSetColor('#ffffff');
         liSetColor('#ffffff');
 
+        itemNameSetColor('#ffffff')
+
         BodySetColor('white');
         LinkSetColor('#13161c');
         self.value = 'night';
@@ -114,6 +121,8 @@ function day_night_handler(self) {
         bSetColor('#80A5F5');
         dlSetColor('#000000');
         liSetColor('#000000');
+        itemNameSetColor('#000000')
+
 
         BodySetColor('#000000');
         LinkSetColor('#000000');
