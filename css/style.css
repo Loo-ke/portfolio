@@ -87,7 +87,7 @@ main #wrap .visual{
   height:auto;
 }
 main #wrap .visual .visual-text-area{
-  padding:350px 0 200px;
+  padding:380px 0 200px;
   margin: 0 0 180px 0;
   display: flex;
   justify-content: center;
@@ -121,71 +121,143 @@ main #wrap .visual .visual-text-area .text .txt-title{
 main .profile{
   width:100%;
   font-family: 'Gmarket-m', sans-serif;
+  align-items: center;
+  justify-items: center;
 }
 .s2-wrap{
-  border:1px solid black;
   width:100%;
   display: inline-block;
+
 }
 main .profile h2{
   font-family: 'Gmarket-b', sans-serif;
   text-align: right;
   font-size: 40px;
   line-height: 1.74;
-  float:right;
-  bordeR:1px solid orange;
+  display:flex;
+  justify-content: center;
+  
 }
 .s2-wrap .image-box{
   width:120px;
   height:120px;
-  border:1px solid red;
-  float:right;
-
 }
+
+
 main .profile .intro-box{
-  padding:100px 0 200px;
-  margin: 0 0 100px 0;
+  padding:100px 0 80px;
+  margin: 0 0 20px 0;
+  width:100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-items: center;
   /* border:1px solid red; */
 }
-main .profile .intro-box h3{
-  font-weight: 600;
+main .profile .intro-box .intro-h3-box{
+  width:100%;
+  display:flex;
+  justify-content:space-around ;
+  text-align: center;
+  /* border:1px solid black; */
+  margin:0 0 40px 0;
+}
+main .profile .intro-box .intro-h3-box h3{
+  width:30%;
   font-family: 'Gmarket-m', sans-serif;
-  margin-top:50px;
-
+  font-size:22px;
+  font-weight: 600;
+  color:#80A5F5;
+  /* border:1px solid blue; */
 }
 
-
-main .profile .intro-box .intro{
-  font-size: 19px;
+main .profile .intro-box .intro-p-box{
+  width:100%;
+  /* border:1px solid green; */
+  display:flex;
+  justify-content:space-around ;
+  text-align: center;
+  margin:0 0 20px 0;
+}
+main .profile .intro-box .intro-p-box .intro{
+  /* border:1px solid red; */
+  width:30%;
+  font-size:20px;
   letter-spacing: -0.2px;
   line-height: 1.95;
-  margin:0 50px 50px;
+  
   font-family: 'Gmarket-l', sans-serif;
-  
-  
 }
+
+main .profile .intro-box .check{
+  width:30px;
+  vertical-align: middle;
+}
+
+
+/*알잘딱깔센*/
 main .profile .s2-largeText{
-  font-size:60px;
-  text-align: center;
+  width:100%;
+  /* border:1px solid purple; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .profile .s2-largeText .text-box{
+  width:50%;
+  font-size:40px;
   margin-top:100px;
   padding:30px 0;
-  border:1px solid red;
+  line-height: 1.7;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  /* bordeR:1px solid red; */
+} 
+main .profile .s2-largeText .text-box .space-box{
+  width:50%;
 }
+
+main .profile .s2-largeText p:nth-child(2){
+  text-align: left;
+}
+main .profile .s2-largeText b{
+  font-size:75px;
+  font-weight: 700;
+  color:#80A5F5;
+}
+main .profile .img-box{
+  width:50%;
+}
+
+
+/*한마디로 알잘딱깔센*/
+.profile h4{
+  font-size:50px;
+  padding:30px 0;
+  margin:100px 0 50px;
+  text-align: center;
+}
+.profile h4 b{
+  color:#80A5F5;
+  font-size: 70px;
+  font-weight: 600;
+}
+
 
 /*포폴 넣는 곳!!!! portfolio */
 main .portfolio{
   width:100%;
   height:auto;
-  border:1px solid black;
+  border:0px solid black;
   margin:0 auto;
-  
+  padding-top:200px;
 }
 main .portfolio h2{
   text-align: center;
-      padding:20px 0;
-      font-size:40px;
+  padding:20px 0;
+  font-size:40px;
   font-family: "Gmarket-b";
   margin:20px 0 120px;
 }
@@ -198,22 +270,22 @@ main .portfolio ul{
 }
 main .portfolio ul li{
   width:31%;
-      height:auto;
-      display:flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      list-style-type: none;
-      
-      border-radius: 25px;
+  height:auto;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  
+  border-radius: 25px;
   
 }
 main .portfolio ul li a{
   cursor: pointer;
-      width:100%;
-      text-decoration: none;
-      border-radius: 25px;
-      color: #000;
+  width:100%;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #000;
 }
 main .portfolio a:hover{
   font-weight: 700;
@@ -255,9 +327,10 @@ main .portfolio dd{
 
 /*댓글 css 시작 comment*/
 .comment-wrap{
-  border:1px solid gray;
+  border:0px solid gray;
       width:100%;
-      height:0 auto;
+      padding-bottom:70px;
+      height:auto;
       display:flex;
       flex-direction: column;
       align-items: center;
@@ -300,16 +373,16 @@ main .portfolio dd{
   padding:0 30px;
   border:2px solid #80A5F5;
   border-radius: 25px;
-  color:#80A5F5;
+  color:#ffffff;
   font-weight:600;
   font-size:17px;
-  background-color: #fff;
+  background-color: #80A5F5;
   cursor: pointer;
 }
 .comment-wrap .itemAdd:hover{
-  color:#fff;
+  color:#80A5F5;
   font-weight:600;
-  background-color: #80A5F5;
+  background-color: #ffffff;
 }
 .comment-wrap ul{
   width:100%;
@@ -317,10 +390,8 @@ main .portfolio dd{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border:0px solid red;
 }
 .comment-wrap li{
-  border:0px solid green;
   width:100%;
   padding:15px 0;
   display:flex;
@@ -342,15 +413,15 @@ main .portfolio dd{
   padding:10px;
   border-radius: 15px;
   border:2px solid #80A5F5;
-  color:#80A5F5;
-  background-color: #fff;
+  color:#ffffff;
+  background-color: #80A5F5;
   font-weight: 700;
   font-size:15px;
   cursor: pointer;
 }
 .comment-wrap .itemDel:hover{
-  color:#fff;
-  background-color: #80A5F5;
+  color:#80A5F5;
+  background-color: #ffff;
 }
 .comment-wrap .cmt-title{
     background-color: #eceffe;
@@ -390,20 +461,16 @@ footer ul{
   margin:0 auto;
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding:30px 0;
 }
 footer a{
-  border:none;
-  
+  color:#000;
+  text-decoration: none;
 }
-footer li:hover{
-  background-color: #ffffff;
-  color:#9de1f6;
-  border:2px solid #9de1f6;
-}
+
 footer li{
-  background-color: #9de1f6;
+  font-size:15px;
   border-radius: 40px;
   width:80px;
   height:80px;
@@ -412,7 +479,14 @@ footer li{
 footer span{
   text-align: center;
   padding:30px 0 20px 0;
+  font-size:13px;
 }
+footer img{
+  width:75%;
+  vertical-align: middle;
+  padding:10px;
+}
+
 /*footer 끝!!!!!!!!*/
 
 
@@ -436,6 +510,8 @@ header #header-wrap #dn_btn{
 header #header-wrap #dn_btn:hover{
   background-color: #fff;
   border:2px solid #80A5F5;
+  font-size:16px;
+  font-weight: 600;
   cursor: pointer;
   color:#80A5F5;
 }
